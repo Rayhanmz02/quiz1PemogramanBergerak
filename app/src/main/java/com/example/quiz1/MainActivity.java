@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.bt1) {
-            String nama = et1.getText().toString();
-            String kode = et2.getText().toString();
-            String jumlah = et3.getText().toString();
+            String nama = et1.getText().toString().trim();
+            String kode = et2.getText().toString().trim();
+            String jumlah = et3.getText().toString().trim();
             int jumlahBarang = Integer.parseInt(jumlah);
 
             double totalHarga = 0;
@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     index = i;
                     break;
                 }
-            } double hargaBarang = HargaBarang[index];
+            }
+            double hargaBarang = HargaBarang[index];
             double diskon = 0;
 
             totalHarga = jumlahBarang * hargaBarang;
             if (index != -1) {
-
 
 
                 if (rb1.isChecked()) {
@@ -66,24 +66,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else if (rb3.isChecked()) {
                     diskon = 0.02 * totalHarga; // 2%
                 }
-                }double totalhargadiskon = totalHarga -  diskon;
+            }
+            double totalhargadiskon = totalHarga - diskon;
 
             if (totalhargadiskon > 10000000) {
                 totalhargadiskon -= 100000;
             }
-                if (index != -1) {
-                    Intent intent = new Intent(MainActivity.this, detailA.class);
-                    intent.putExtra("Nama", nama);
-                    intent.putExtra("kode_barang", kode);
-                    intent.putExtra("nama_barang", NamaBarang[index]);
-                    intent.putExtra("jumlah_barang", jumlah);
-                    intent.putExtra("harga_barang", HargaBarang[index]);
-                    intent.putExtra("totalharga",totalHarga);
-                    intent.putExtra("totalhargadiskon",totalhargadiskon);
-                    intent.putExtra("diskonmem",diskon);
+            if (index != -1) {
 
-                    startActivity(intent);
-                }
+                Intent intent = new Intent(MainActivity.this, detailA.class);
+                intent.putExtra("Nama", nama);
+                intent.putExtra("kode_barang", kode);
+                intent.putExtra("nama_barang", NamaBarang[index]);
+                intent.putExtra("jumlah_barang", jumlah);
+                intent.putExtra("harga_barang", HargaBarang[index]);
+                intent.putExtra("totalharga", totalHarga);
+                intent.putExtra("totalhargadiskon", totalhargadiskon);
+                intent.putExtra("diskonmem", diskon);
+
+                startActivity(intent);
             }
         }
     }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rmz Quiz 1</string>
+    <string name="customer">Klanten Naam:</string>
+    <string name="kode_barang">Artikelcode:</string>
+    <string name="nama_barang">naam van goederen:</string>
+    <string name="jumlah_barang">de hoeveelheid goederen:</string>
+    <string name="harga_barang">prijs van goederen:</string>
+    <string name="total_barang">totale prijs:</string>
+    <string name="total_bayar">Totale betaling:</string>
+    <string name="diskon">korting:</string>
+    <string name="share">DEEL</string>
+    <string name="nama_awal">Naam:</string>
+    <string name="tipe_pelanggan">klant type:</string>
+    <string name="mem1">GOUD</string>
+    <string name="mem2">ZILVER</string>
+    <string name="mem3">NORMAAL</string>
+    <string name="kode_awal">ARTIKELCODE</string>
+    <string name="jumlah_awal">HET HOEVEELHEID GOEDEREN</string>
+    <string name="next">GA DOOR</string>
+</resources>

@@ -19,22 +19,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="85dp"
-            android:layout_height="wrap_content"
-            android:text="Nama : " />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et1"
             android:layout_width="226dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="@string/nama_awal"
+            android:text=" "
+            android:layout_marginTop="30dp"
+            android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
   <TextView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="Tipe Pelanggan :"
+      android:text="@string/tipe_pelanggan"
       android:textStyle="bold"/>
 
     <RadioGroup
@@ -46,42 +49,55 @@
             android:id="@+id/rb1"
             android:layout_width="130dp"
             android:layout_height="match_parent"
-            android:text="Gold" />
+            android:text="@string/mem1" />
 
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="130dp"
             android:layout_height="match_parent"
-            android:text="Silver" />
+            android:text="@string/mem2" />
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="130dp"
             android:layout_height="match_parent"
-            android:text="Biasa" />
+            android:text="@string/mem3" />
 
     </RadioGroup>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="36dp" />
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/et2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="kode barang"/>
-
-    <EditText
-        android:id="@+id/et3"
+        android:hint="@string/kode_awal"
+        android:text=" "
+        android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="jumlah barang"
-        android:inputType="number"/>
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/jumlah_awal"
+            android:text=" "
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/bt1"
         android:layout_width="178dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Button" />
+        android:text="@string/next" />
 
 </LinearLayout>

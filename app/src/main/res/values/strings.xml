@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Rmz Quiz 1</string>
+    <string name="customer">Nama customer : </string>
+    <string name="kode_barang">kode barang :  </string>
+    <string name="nama_barang">Nama barang :  </string>
+    <string name="jumlah_barang">Jumlah barang :  </string>
+    <string name="harga_barang">Harga barang :  </string>
+    <string name="total_barang">Total Harga :  </string>
+    <string name="total_bayar">Total Bayar :  </string>
+    <string name="diskon">Diskon :  </string>
+    <string name="share">BAGIKAN  </string>
+    <string name="nama_awal">Nama :   </string>
+    <string name="tipe_pelanggan">Tipe Pelanggan :   </string>
+    <string name="mem1">EMAS</string>
+    <string name="mem2">PERAK</string>
+    <string name="mem3">BIASA</string>
+    <string name="kode_awal">Kode Barang</string>
+    <string name="jumlah_awal">Jumlah Barang</string>
+    <string name="next">lanjut</string>
+
 </resources>

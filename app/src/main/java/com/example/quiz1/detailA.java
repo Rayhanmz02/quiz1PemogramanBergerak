@@ -35,28 +35,28 @@ public class detailA extends AppCompatActivity  {
 
 
         TextView textView3 = findViewById(R.id.textView3);
-            textView3.setText("Nama Customer : "+ Nama);
+            textView3.setText( getApplicationContext().getResources().getString(R.string.customer)+Nama);
 
         TextView textView4 = findViewById(R.id.textView4);
-        textView4.setText("kode barang : "+ KodeBarang);
+        textView4.setText(getApplicationContext().getResources().getString(R.string.kode_barang)+ KodeBarang);
 
         TextView textView5 = findViewById(R.id.textView5);
-        textView5.setText( "nama barang : "+ NamaBarang);
+        textView5.setText( getApplicationContext().getResources().getString(R.string.nama_barang)+ NamaBarang);
 
         TextView textView6 = findViewById(R.id.textView6);
-        textView6.setText("jumlah barang : "+ JumlahBarang);
+        textView6.setText(getApplicationContext().getResources().getString(R.string.jumlah_barang)+ JumlahBarang);
 
         TextView textView7 = findViewById(R.id.textView7);
-       textView7.setText(  "harga : "+ "Rp "+df.format(hargabarang));
+       textView7.setText( getApplicationContext().getResources().getString(R.string.harga_barang)+ "Rp "+df.format(hargabarang));
 
         TextView textView8 = findViewById(R.id.textView8);
-        textView8.setText( "total harga : "+"Rp "+ df.format(totalharga));
+        textView8.setText( getApplicationContext().getResources().getString(R.string.total_barang)+"Rp "+ df.format(totalharga));
 
         TextView textView9 = findViewById(R.id.textView9);
-        textView9.setText("total bayar : "+ "Rp " +df.format(totaldiskon));
+        textView9.setText(getApplicationContext().getResources().getString(R.string.total_bayar)+ "Rp " +df.format(totaldiskon));
 
         TextView textView10 = findViewById(R.id.textView10);
-        textView10.setText(  "diskon mem : "+ "Rp "+df.format(diskon));
+        textView10.setText( getApplicationContext().getResources().getString(R.string.diskon)+ "Rp "+df.format(diskon));
 
         bt2.setOnClickListener(click -> {
             Intent intent1 = new Intent(Intent.ACTION_SEND);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rmz Quiz 1</string>
+    <string name="customer">"Name Customer : "</string>
+    <string name="kode_barang">Item Code:</string>
+    <string name="nama_barang">Name Item:</string>
+    <string name="jumlah_barang">Amount Item:</string>
+    <string name="harga_barang">Price Item:</string>
+    <string name="total_barang">total price:</string>
+    <string name="total_bayar">payment amount:</string>
+    <string name="diskon">Discount:</string>
+    <string name="share">Share</string>
+    <string name="nama_awal">Name:</string>
+    <string name="tipe_pelanggan">Customer Type:</string>
+    <string name="mem1">Gold</string>
+    <string name="mem2">Silver</string>
+    <string name="mem3">Normal</string>
+    <string name="kode_awal">Item Code</string>
+    <string name="jumlah_awal">Amount Item</string>
+    <string name="next">NEXT</string>
+</resources>
